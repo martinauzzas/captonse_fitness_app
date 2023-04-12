@@ -1,4 +1,4 @@
-import DataTable from '../components/Logs/DataTableLogs'
+import DataTable from '../components/DailyLogs/DataTableLogs'
 
 const DailyLog = () => {
   return (
