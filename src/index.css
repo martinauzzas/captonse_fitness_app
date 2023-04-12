@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 * {
-  font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+  /* font-family:'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-family:'Times New Roman', Times, serif
 }
 
 .background {

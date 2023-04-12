@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Link, HashRouter } from 'react-router-dom';
 import AuthChecker from './auth/AuthChecker';
+import AuthGuest from './auth/AuthAnonymously';
 import { Provider } from 'react-redux';
 
 import routes from './config/routes';
@@ -21,9 +22,9 @@ function App() {
                         path = { route.path }
                         element = {
                             route.protected ? (
-                            <AuthChecker>
+                            <AuthGuest>
                                 <route.component />
-                            </AuthChecker>
+                            </AuthGuest>
                             ) : (
                                 <route.component />
                             )
