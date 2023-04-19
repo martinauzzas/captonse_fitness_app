@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
 import background from '../../assets/images/augustine-wong-li0iC0rjvvg-unsplash.jpg'
 
 const columns: GridColDef[] = [
-    { field: "name", headerName: "Name", width: 90 },
-    { field: "meal", headerName: "Meal", width: 90 },
-    { field: "ingridients", headerName: "Ingredients", width: 300 },
-    { field: "full_recipe", headerName: "Full Recipe", flex: 3 },
+    { field: "name", headerName: "Name", width: 110 },
+    { field: "meal", headerName: "Meal", width: 110 },
+    { field: "ingridients", headerName: "Ingredients", width: 150 },
+    { field: "full_recipe", headerName: "Full Recipe", width: 300},
 ];
 
 function DataTable() {
@@ -73,7 +73,7 @@ function DataTable() {
         </div>
         {/* DATATABLE */}
         <div className={ open ? "hidden" : "container mx-10 my-5 flex flex-col"}
-            style = {{ height: 400, width: '110%' }}
+            style = {{ height: 400, width: '90%' }}
         >
             <DataGrid rows = { recipeData } columns = { columns }
                 onRowSelectionModelChange={ (item: any) => {
@@ -86,16 +86,18 @@ function DataTable() {
         </div>
             <div className={ open ? "hidden" : ""}>
                 <hr className='m-5 text-blue-300'/>
-                <h4 className='database-title flex justify-center text-yellow-400 text-2xl'>
-                    Want to find new Recipes?
-                    <i className="fa-solid fa-cookie-bite ml-2 mt-1"></i>
-                </h4>
-                <Link to="/apirecipes">
-                    <button className='button-dashboard-api ml-24 flex justify-center p-5'>
-                        Click here!
-                        <i className="fa-solid fa-arrow-up-right-from-square m-2"></i>
-                    </button>
-                </Link>
+                <div className="flex flex-col justify-center ">
+                    <h4 className='flex justify-center text-yellow-400 text-2xl'>
+                        Want to find new Recipes?
+                        <i className="fa-solid fa-cookie-bite ml-2 mt-1"></i>
+                    </h4>
+                    <Link to="/apirecipes" className= "flex justify-center">
+                        <button className='button-dashboard-api ml-24 flex justify-center p-5'>
+                            Click here!
+                            <i className="fa-solid fa-arrow-up-right-from-square m-2"></i>
+                        </button>
+                    </Link>
+                </div>
             </div>
     </>
     )

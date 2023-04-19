@@ -20,13 +20,13 @@ const Modal = ( props: Props ) => {
                 }}    
             >
                 <div className="modal-body">
-                    <div className="flex flex-row space-apart">
-                        <p className="flex justify-center m-3 p-2 rounded cursor-pointer"
+                    <div className="">
+                        <p className="flex justify-end m-3 p-2 rounded cursor-pointer modal-arrow"
                         onClick={props.onClose}>
                             <i className="fa-solid fa-left-long text-2xl hover:text-red-500 text-sky-800"></i>
                         </p>
                     </div>
-                    <div className="flex flex-col items-center text-center mt-3 p-2">
+                    <div className="flex flex-col items-center text-center p-2">
                         <RecipesForm id= {props.id}></RecipesForm>
                     </div>
                 </div>

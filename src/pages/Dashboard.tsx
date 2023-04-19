@@ -10,7 +10,7 @@ const Dashboard = () => {
     <div>
     <div
         style= {{ backgroundImage: `url(${ background4 })`}}
-        className="background bg-cover bg-slate-600">
+        className="bg-cover h-screen bg-slate-600">
             <h1 className='text-5xl flex justify-center pt-5 text-yellow-500 '>
             <i className="fa-solid fa-chevron-right mr-5"></i>
                 WELCOME TO YOUR DASHBOARD
@@ -19,8 +19,8 @@ const Dashboard = () => {
             <div>
             <Quotes></Quotes>
         </div>
-            <div className='flex flex-row'>
-                <div className='navigation-buttons-position'>
+            <div className='grid gap-2 sm:grid-cols-1 md:grid-cols-2'>
+                <div className='m-14'>
                     <ul>
                         <li >
                             <button className="button-dashboard p-3 m-2 justify-items-center">
@@ -45,7 +45,7 @@ const Dashboard = () => {
                         </li>
                     </ul>
                 </div>
-                <div className= 'todolist-position '>
+                <div className= 'm-14'>
                     <h3 className='text-2xl text-yellow-400 bg-blue-500 p-2'>YOUR WEEKLY CHALLENGES:</h3>
                     <ToDoList taskName={''}></ToDoList>
                 </div>

@@ -37,13 +37,18 @@ function Quotes ( ) {
     }
 
     return (
-        <div className='full-width mt-14 ml-10 flex justify-center'>
-            <button onClick={handleQuotes}>
-                <i className="fa-regular fa-comment quote-icon-position text-yellow-400 text-xl"></i>
-            </button>
-            <i className="fa-solid fa-quote-left text-yellow-400 "></i><h3 className='quote'>{displayQuote.quote}</h3><i className="fa-solid fa-quote-right text-yellow-400 "></i>
+        <div>
+            <div className='flex flex-col mt-2'>
+                <button onClick={handleQuotes}>
+                    <i className="fa-regular fa-comment text-yellow-400 text-xl"></i>
+                </button>
+            </div>
+        <div className='full-width mt-2 ml-10 flex justify-center'>
+            <span className="fa-solid fa-quote-left text-yellow-400 "></span>
+            <h3 className='quote'>{displayQuote.quote}</h3><i className="fa-solid fa-quote-right text-yellow-400 "></i>
             <h5 className='full-width author-position'>{displayQuote.author}</h5>
         </div>
+    </div>
   )
 }
 

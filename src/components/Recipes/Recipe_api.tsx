@@ -75,11 +75,11 @@ function Recipe_api() {
             <i className="fa-brands fa-pagelines ml-3"></i>
         </h1>
 
-        <form className="searchForm" onSubmit={(event) => search(event)}>
+        <form className="searchForm flex justify-center" onSubmit={(event) => search(event)}>
             <input 
                 id="searchText" 
                 type="text" 
-                className='button-recipe-api m-5 ml-0'
+                className='button-recipe-api flex justify-center m-5 ml-0'
                 placeholder='Insert ingridient here'
                 />
             <button className='button-recipe-api'>

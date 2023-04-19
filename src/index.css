@@ -2,68 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
 * {
-  /* font-family:'Open Sans', 'Helvetica Neue', sans-serif; */
-  font-family:'Times New Roman', Times, serif
-}
-
-.background {
-  height: 87vh;
-}
-
-.background-title {
-  background-color: #93c4fd73;
-  width: 40%;
-  margin-left: 0px;
-}
-
-.background-paragraph {
-  background-color: rgba(253, 85, 203, 0.322);
-  width: 100%;
-  height: 23%;
-}
-.background-paragraph3 {
-  width: 33%;
-  height: 100vh;
-}
-.background-paragraph2 {
-  width: 33%;
-  height: 100vh;
-}
-
-.paragrafo-food {
-  position: relative;
-  width: 64vh;
-  height: 20vh;
-  top: 80vh;
-  color: rgb(0, 0, 0);
-  background-color: #a14a0393;
-}
-
-.paragrafo-track {
-  position: relative;
-  width: 64vh;
-  height: 20vh;
-  top: 80vh;
-  color: rgb(0, 0, 0);
-  background-color: #00000042;
-}
-
-.paragrafo-exercises {
-  position: relative;
-  width: 64vh;
-  height: 20vh;
-  top: 80vh;
-  color: rgb(0, 0, 0);
-  background-color: #036aa193;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* NAVIGATION BUTTONS POSITION */
-.navigation-buttons-position {
+/* .navigation-buttons-position {
   position: absolute;
   top: 50%;
   left: 17%;
-}
+} */
 /* DASHBOARD */
 /* QUOTE AUTHOR */
 .author-position {
@@ -77,9 +26,10 @@
 }
 
 .quote-icon-position {
-  position: absolute;
-  top: 27vh;
-  left: 48%;
+  position: relative;
+  justify-content: center;
+  top: 5vh;
+  left: 60%;
 }
 
 .quote {
@@ -139,7 +89,7 @@
   padding: 0.7em 2.7em;
   letter-spacing: 0.06em;
   position: relative;
-  left: 34%;
+  /* left: 34%; */
   font-family: inherit;
   overflow: hidden;
   transition: all 0.3s;
@@ -170,13 +120,6 @@
   transform: translateX(15em);
 }
 
-/* CHALLENGE POSITION */
-.todolist-position {
-    position: absolute;
-    top: 45%;
-    right: 20%;
-    padding: 20px;
-}
   /* INPUT */
 
 .input-type {
@@ -299,18 +242,24 @@
   width: 100%;
 }
 
-/* MODAL */
 .modal-body {
-  position: absolute;
-  margin-inline: 217px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   max-height: calc(100vh - 300px);
   overflow-y: auto;
-  width: 500px;
-  padding-top: 0px;
-  margin-top: 0px;
+  /* margin-top: 20px; */
   background-color: #b6d6f5c2;
   border: #3E859F;
 }
+
+.modal-arrow {
+  position: relative;
+  top: 60px;
+  right: 60px
+}
+
 
 /* MODAL BUTTON */
 
@@ -379,9 +328,6 @@
 }
 
 .body-parts-position {
-  position: relative;
-  top: 10px;
-  left: 500px;
   width: 350px;
   height: 180px;
   margin-bottom: 30px;
@@ -426,7 +372,7 @@
   padding: 0.7em 2.7em;
   letter-spacing: 0.06em;
   position: relative;
-  left: 34%;
+  /* left: 34%; */
   line-height: 1.4em;
   border: 2px solid var(--green);
   background: linear-gradient(to right, #ceb7b779 1%, transparent 70%,transparent 30% , #ceb7b779 100%);

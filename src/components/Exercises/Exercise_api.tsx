@@ -39,8 +39,10 @@ function Exercises_api ( ) {
                 <i className="fa-solid fa-arrow-left ml-5 mt-5 p-3 bg-white rounded-md hover:bg-yellow-300"></i>
             </Link>
             <h1 className='text-3xl p-5 flex justify-center text-yellow-400'>FIND THE RIGHT EXERCISE FOR YOU!</h1>
-            <form onSubmit={handleFormSubmit}>
-                    <h4 className='text-xl flex justify-center m-5 text-red-600'>Insert the body part that you want to train:</h4>
+
+            <div className="flex justify-center flex-column flex-wrap">
+            <form onSubmit={handleFormSubmit} className="">
+                    <h4 className='text-xl m-5 text-red-600'>Insert the body part that you want to train:</h4>
                 <div>
                     <input 
                         type="text" 
@@ -57,8 +59,8 @@ function Exercises_api ( ) {
                 </div>
             </form>
                         
-                <div className='body-parts-position'>
-                    <h5 className='flex justify-center pt-5 font-bold'>Body parts:</h5>
+                <div className='body-parts-position '>
+                    <h5 className='pt-5 font-bold'>Body parts:</h5>
                     <div className='flex justify-center flex-row text-sm'>
                         <ul className='mt-5 mr-1 underline'>
                             <li>UPPER ARMS</li>
@@ -79,6 +81,7 @@ function Exercises_api ( ) {
                     </div>
                 </div>
                 <hr className='m-5'/>
+            </div>
 
             <div className='flex flex-row flex-wrap justify-center content-center'>
                 {exercises.map((exercise) => (
